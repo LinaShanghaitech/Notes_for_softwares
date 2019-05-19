@@ -1,4 +1,4 @@
-# VIM 编辑器管理 
+## VIM 编辑器管理 
 [参考链接](https://www.cnblogs.com/markleaf/p/7808817.html)
 #### **移动**
 ```
