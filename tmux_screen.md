@@ -1,4 +1,4 @@
-# TMUX　窗口管理
+## TMUX　窗口管理
 ### tmux:
 ```
    tmux ls 
@@ -28,7 +28,7 @@
    <C-b> ?  列出所有快捷键
    <C-b> :  命令提示符
 ```
-### screen:
+## screen:
 ```
     screen -ls
     screen -S  xxx   create session
@@ -36,8 +36,3 @@
     <C-a> c  创建窗口 
     <C-a> d  (detach)  离开当前session, 仍到后台执行```
 	
-bufexplore:
-		用于管理vim 的buffer
-		参考链接:		https://blog.csdn.net/icycolawater/article/details/77946139
-		\be 当前窗口显示
-		\bs\bv 上下/左右建立新窗口显示
