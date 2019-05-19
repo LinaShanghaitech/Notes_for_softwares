@@ -93,19 +93,19 @@
 	git intit --bare 
 ```
 
-####　全部远程分支转为本地分支
+#### 全部远程分支转为本地分支
 ```
-		mkdir local_repo
-		cd local_repo	
-		git clone --bare  https://xxx.git  .git
-		git config --unset core.bare
-		git reset --hard
+	mkdir local_repo
+	cd local_repo	
+	git clone --bare  https://xxx.git  .git
+	git config --unset core.bare
+	git reset --hard
 ```
 
 #### 其他命令
 ```
-		git show <commit_id>   查看对应的修改
-		git log -p filename    查看对应文件的修改历史日志
-		git stash   暂存工作内容，可以把修改了没有commit的内容保存起来
-		git diff  branch1 branch2 查看branch之间的文件差异
+	git show <commit_id>   查看对应的修改
+	git log -p filename    查看对应文件的修改历史日志
+	git stash   暂存工作内容，可以把修改了没有commit的内容保存起来
+	git diff  branch1 branch2 查看branch之间的文件差异
 ```	
