@@ -1,5 +1,5 @@
-## TMUX　窗口管理
-### tmux:
+## TMUX　
+#### 常用操作:
 ```
    tmux ls 
    tmux new -s  xxx 创建session
@@ -28,7 +28,8 @@
    <C-b> ?  列出所有快捷键
    <C-b> :  命令提示符
 ```
-## screen:
+## SCREEN
+#### 常用操作
 ```
     screen -ls
     screen -S  xxx   create session
