@@ -7,7 +7,7 @@
     	修改远程仓库地址  (3种)
     	1.git  remote set-url origin [url]
 		2.git remote rm origin
-	   	  git remote add origin [url]
+		  git remote add origin [url]
 		3. 修改config文件,覆盖本地所有文件
 	   git fetch --all
 	   git reset --hard origin/master
