@@ -5,10 +5,10 @@
 	git remote add origin https://github.com/xxx.git 查看远程仓库的信息
 	git remote  -v
     	修改远程仓库地址  (3种)
-    	1. git  remote set-url origin [url]
-	2. git remote rm origin
-	   git remote add origin [url]
-	3. 修改config文件,覆盖本地所有文件
+    	1.git  remote set-url origin [url]
+		2.git remote rm origin
+	   	  git remote add origin [url]
+		3. 修改config文件,覆盖本地所有文件
 	   git fetch --all
 	   git reset --hard origin/master
 ```
@@ -78,11 +78,11 @@
 ```
 	git 推送本地分支到远程分支并建立关联关系的三种不同方式:
 	都需要切换到需要push 的本地分支上。
-	1. 直接git push
+	1.直接git push
 			远程已有remote_branch分支并且已经关联本地分支local_branch且本地已经切换到local_branch
-	2. git push -u origin/remote_branch
+	2.git push -u origin/remote_branch
 			远程已有remote_branch分支但未关联本地分支local_branch且本地已经切换到local_branch
-	3. git push origin local_branch:remote_branch
+	3.git push origin local_branch:remote_branch
 			远程没有remote_branch分支，本地已经切换到local_branch
 ```
 
