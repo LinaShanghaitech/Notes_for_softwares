@@ -55,17 +55,17 @@
 	git reset --hard e377f60e28c8b84158	回滚到指定版本
 	git push -f origin master　强制提交
 	1.git commit 之前
-		git add 之前 (未添加到暂存区)
-			git checkout -- file name 撤销修改
-			git checkout -- . 多个文件
-		git add 之后
-			git reset HEAD  filename 从暂存区撤销
-			git reset HEAD 将所有暂存区文件撤销
+	  git add 之前 (未添加到暂存区)
+		git checkout -- file name 撤销修改
+		git checkout -- . 多个文件
+	  git add 之后
+		git reset HEAD  filename 从暂存区撤销
+		git reset HEAD 将所有暂存区文件撤销
 
 	2.git commit 之后
-		git revert 撤销某次操作，而在此次操作之前和之后的提交记录都会保留,  可以通过git log 查看 
-		git revert commitid  
-		git reset commitid  回退到某次提交，覆盖是不可逆的
+	  git revert 撤销某次操作，而在此次操作之前和之后的提交记录都会保留,  可以通过git log 查看 
+	  git revert commitid  
+	  git reset commitid  回退到某次提交，覆盖是不可逆的
 ```
 #### 本地分支和远程分支操作
 ```
