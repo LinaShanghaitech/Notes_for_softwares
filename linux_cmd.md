@@ -2,12 +2,12 @@
 
 #### 基础命令
 ```
-  find -name “*.txt” -exec ‘cat’ {} \; > car_part.txt 合并多个文件
-  cp -r -d src_dir dst_dir copy的时候，copy 软链接, 只需要添加 -d
-  ls -al 显示所有文件（包括隐藏文件）
-  unlink 删除软链接, 不用 rm -rf ， rm -rf 容易删除掉原始数据
-  ln -s src_file des_file 添加软链接,先把原来的软链接删掉，然后再添加
-  find . -name “*cpp” | xargs grep -ri “str1” 查找包含某字符串的文件
+find -name “*.txt” -exec ‘cat’ {} \; > car_part.txt 合并多个文件
+cp -r -d src_dir dst_dir copy的时候，copy 软链接, 只需要添加 -d
+ls -al 显示所有文件（包括隐藏文件）
+unlink 删除软链接, 不用 rm -rf ， rm -rf 容易删除掉原始数据
+ln -s src_file des_file 添加软链接,先把原来的软链接删掉，然后再添加
+find . -name “*cpp” | xargs grep -ri “str1” 查找包含某字符串的文件
 ```
 
 #### cat显示文件的内容
