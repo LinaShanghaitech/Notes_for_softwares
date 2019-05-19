@@ -20,6 +20,7 @@
 	git pull == git fetch + git merge
 	git rev-parse (--short) HEAD 获取从commitid
 ```	
+
 #### 分支处理
 ```
 	git branch 查看本地分支， *为当前分支
@@ -41,14 +42,72 @@
 	git push 推送到远程github上, 可以check冲突的文件
 ```    
 
-####关于代码冲突(必须手动解决冲突后再重新提交）:
+####关于代码冲突(必须手动解决冲突后再重新提交）
 ```
 	远程版本库包含本地尚不存在的提交如何解决：
 	   a) git pull 把最新的代码拉下来，合并冲突
    	   b) git status
 ```
-#### 代码回滚:
+#### 代码回滚
 ```
 	git reset --hard e377f60e28c8b84158	回滚到指定版本
 	git push -f origin master　强制提交
+```
+
+
+
+#### 撤销与回滚
+```
+	1. git commit 之前
+		git add 之前 (未添加到暂存区)
+			git checkout -- file name 撤销修改
+			git checkout -- . 多个文件
+		git add 之后
+			git reset HEAD  filename 从暂存区撤销
+			git reset HEAD 将所有暂存区文件撤销
+
+	2. git commit 之后
+		git revert 撤销某次操作，而在此次操作之前和之后的提交记录都会保留,  可以通过git log 查看 
+		git revert commitid  
+		git reset commitid  回退到某次提交，覆盖是不可逆的
+```
+
+```
+	git fetch 更新远程代码到本地仓库
+	git fetch origin branch1 #-- FETCH_HEAD
+	git fetch origin branch1:branch2  创建本地分支branch2
+	git log -p master.. origin/master 比较本地和远程的区别
+	git merge origin/master 远程下载的代码合并本地仓库
+```
+```
+	git 推送本地分支local_branch到远程分支 remote_branch并建立关联关系的三种不同方式:
+	都需要切换到需要push 的本地分支上。
+
+	1. 直接git push
+			远程已有remote_branch分支并且已经关联本地分支local_branch且本地已经切换到local_branch
+	2. git push -u origin/remote_branch
+			远程已有remote_branch分支但未关联本地分支local_branch且本地已经切换到local_branch
+	3. git push origin local_branch:remote_branch
+			远程没有remote_branch分支，本地已经切换到local_branch
+```
+#### 其他命令
+```
+		git show <commit_id>   查看对应的修改
+		git log -p filename    查看对应文件的修改历史日志
+		git stash   暂存工作内容，可以把修改了没有commit的内容保存起来
+		git diff  branch1 branch2 查看branch之间的文件差异
+```	
+#### bare库
+```
+	初始化版本库，只用于记录版本库历史记录的.git目录下的文件，
+	不包含实际项目源文件的拷贝，不是工作目录
+	git intit --bare 
+```
+####　全部远程分支转为本地分支
+```
+		mkdir local_repo
+		cd local_repo	
+		git clone --bare  https://xxx.git  .git
+		git config --unset core.bare
+		git reset --hard
 ```
