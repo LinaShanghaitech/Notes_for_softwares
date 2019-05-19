@@ -5,3 +5,4 @@ The notes for different softwares
 - [x] [git](https://github.com/LinaShanghaitech/Notes_for_softwares/blob/master/git.md)
 - [x] [markdown](https://github.com/LinaShanghaitech/Notes_for_softwares/blob/master/markdown.md)
 - [ ] [shell](https://github.com/LinaShanghaitech/Notes_for_softwares/blob/master/shell.md)
+- [x] [linux_cmd](https://github.com/LinaShanghaitech/Notes_for_softwares/blob/master/linux_cmd.md)
