@@ -7,3 +7,4 @@ The notes for different softwares
 - [x] [shell](https://github.com/LinaShanghaitech/Notes_for_softwares/blob/master/shell.md)
 - [x] [linux_cmd](https://github.com/LinaShanghaitech/Notes_for_softwares/blob/master/linux_cmd.md)
 - [x] [pdb](https://github.com/LinaShanghaitech/Notes_for_softwares/blob/master/pdb.md)
+- [x] [matlab](https://github.com/LinaShanghaitech/Notes_for_softwares/blob/master/matlab.md)
