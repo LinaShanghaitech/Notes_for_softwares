@@ -1,4 +1,4 @@
-# VIM 编辑器管理
+# VIM 编辑器管理 
 [参考链接](https://www.cnblogs.com/markleaf/p/7808817.html)
 #### **移动**
 ```
@@ -50,8 +50,7 @@
 	移动mm或者复制mc都需要 先mt 再 mf
 ```
 
-#### **bufexplore插件用于管理buffer**
-[参考链接](https://blog.csdn.net/icycolawater/article/details/77946139)
+#### **bufexplore插件用于管理buffer**　[[参考链接]](https://blog.csdn.net/icycolawater/article/details/77946139)
 ```
 	\be 当前窗口显示
 	\bs\bv 上下/左右建立新窗口显示
