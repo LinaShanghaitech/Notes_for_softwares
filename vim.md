@@ -3,10 +3,10 @@
 #### **移动**
 ```
 	zz/zt/zb 移动当前行到屏幕中央/顶部/底部
-    Ctrl + u / d   向上/下滚动半屏
-    w/e  向后跳
-    W/E 向后长跳
-    b/B 向前跳/长跳
+	Ctrl + u / d   向上/下滚动半屏
+	w/e  向后跳
+	W/E 向后长跳
+	b/B 向前跳/长跳
 ```
 
 #### **编辑**
@@ -32,8 +32,8 @@
 #### **多标签编辑**
 ```
 	\: tabedit file  新标签中打开文件file
-    gt 下一个i标签
-    0gt/1gt 第一个标签
+	gt 下一个标签
+	0gt/1gt 第一个标签
 ```
 #### **操作目录**
 ```
@@ -50,8 +50,7 @@
 	移动mm或者复制mc都需要 先mt 再 mf
 ```
 
-#### **bufexplore插件**
-用于管理vim 的buffer
+#### **bufexplore插件用于管理buffer**
 [参考链接](https://blog.csdn.net/icycolawater/article/details/77946139)
 ```
 	\be 当前窗口显示
