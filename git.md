@@ -13,7 +13,7 @@
 	   git reset --hard origin/master
 ```
 
-#### 仓库管理原理
+#### 仓库管理
 ```
 	git fetch  远程代码下载
 	git merge  分支合并
@@ -42,7 +42,7 @@
 	git push 推送到远程github上, 可以check冲突的文件
 ```    
 
-#### 代码冲突(
+#### 代码冲突
 ```
 	远程版本库包含本地尚不存在的提交如何解决：
 	   a) git pull 把最新的代码拉下来，合并冲突
