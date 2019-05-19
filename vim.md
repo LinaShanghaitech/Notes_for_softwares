@@ -1,8 +1,10 @@
-#VIM　编辑器管理
+# VIM 编辑器管
 
-vim: 快捷键
+
+#### vim: 快捷键
 	参考链接 https://www.cnblogs.com/markleaf/p/7808817.html
-	移动:
+	
+	*移动*　:
 			zz/zt/zb: 移动当前行到屏幕中央/顶部/底部
 			Ctrl + u / d   向上/下滚动半屏
 			w/e  向后跳
